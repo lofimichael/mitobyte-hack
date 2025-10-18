@@ -104,3 +104,35 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Offset milestone toasts below regular toasts */
+.milestone-toast {
+  margin-top: 6rem !important;
+}
+
+/* Denial toast for TOO WEAK - pulsing berating text */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+  20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+.too-weak-toast {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%) !important;
+  border: 4px solid #991b1b !important;
+  box-shadow: 0 0 30px rgba(239, 68, 68, 0.8) !important;
+  animation: shake 0.5s ease-in-out, pulse 1s ease-in-out infinite !important;
+}
+
+.too-weak-toast [data-title] {
+  font-size: 2rem !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.1em !important;
+  animation: pulse 0.8s ease-in-out infinite !important;
+}
+
+.too-weak-toast [data-description] {
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  margin-top: 0.5rem !important;
+}

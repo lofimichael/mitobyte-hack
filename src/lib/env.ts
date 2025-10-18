@@ -9,7 +9,7 @@ export const env = createEnv({
   server: {
     SUPABASE_SECRET_KEY: z
       .string()
-      .min(1, "SUPABASE_SECRET_KEY is required"),
+      .optional(), // Optional for client-side only apps
     NODE_ENV: z
       .enum(["development", "production", "test"])
       .default("development"),
@@ -22,11 +22,10 @@ export const env = createEnv({
   client: {
     NEXT_PUBLIC_SUPABASE_URL: z
       .string()
-      .url("NEXT_PUBLIC_SUPABASE_URL must be a valid URL")
-      .min(1, "NEXT_PUBLIC_SUPABASE_URL is required"),
+      .optional(), // Optional for client-side only apps
     NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: z
       .string()
-      .min(1, "NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY is required"),
+      .optional(), // Optional for client-side only apps
   },
 
   /**
