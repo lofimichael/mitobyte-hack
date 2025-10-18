@@ -10,82 +10,82 @@ interface DemoTaskTemplate {
 const DEMO_TASKS: DemoTaskTemplate[] = [
   // Priority 1 tasks (easiest to pick up) - Low strength (1-2)
   {
-    title: 'Respond to Slack from 3 weeks ago',
-    description: 'They probably forgot anyway',
+    title: '💧 HYDRATION CHECK',
+    description: 'ACQUIRE WATER. STAY HYDRATED. WE WINNING.',
     priority: 1,
     strength: 1  // Tiny - instant pickup
   },
   {
-    title: 'Update Jira tickets (lol)',
-    description: 'Because management actually checks',
+    title: '🔥 INBOX ZERO SPEEDRUN',
+    description: 'Clear 3 emails. PRODUCTIVITY UNLOCKED.',
     priority: 1,
     strength: 1  // Tiny - instant pickup
   },
   {
-    title: 'Pretend to listen in standup',
-    description: 'Nod occasionally',
+    title: '📱 NOTIFICATIONS = DELETED',
+    description: 'Clear your phone. FOCUS MODE ACTIVATED.',
     priority: 1,
     strength: 2  // Small
   },
 
   // Priority 2 tasks - Low-medium strength (2-4)
   {
-    title: 'Fix bug from 2019 no one wants to touch',
-    description: 'The sacred legacy code',
+    title: '💪 25 PUSHUPS NO EXCUSES',
+    description: 'Drop and give me 25. BUILD DIFFERENT.',
     priority: 2,
     strength: 3
   },
   {
-    title: 'Respond to email from last sprint',
-    description: 'Better late than never',
+    title: '☕ COFFEE ACQUIRED',
+    description: 'Fuel up. Caffeine = unlimited power.',
     priority: 2,
     strength: 2
   },
 
   // Priority 3 tasks (medium) - Medium strength (4-6)
   {
-    title: 'Understand the legacy codebase',
-    description: 'CHALLENGE: IMPOSSIBLE',
+    title: '🎯 DEEP WORK: 45 MIN SESSION',
+    description: 'Phone away. No distractions. LOCK IN.',
     priority: 3,
     strength: 5  // Medium
   },
   {
-    title: 'Refactor thing that already works',
-    description: 'What could go wrong?',
+    title: '📚 LEARN NEW TECH STACK',
+    description: 'Level up your skills. STAY AHEAD.',
     priority: 3,
     strength: 4
   },
   {
-    title: 'Attend meeting that should be email',
-    description: '30 minutes of your life',
+    title: '🧠 MORNING ROUTINE DOMINATION',
+    description: 'Wake up. Win the day before 9am.',
     priority: 3,
     strength: 4
   },
 
   // Priority 4 tasks - High strength (6-8)
   {
-    title: 'Debug production issue at 2am',
-    description: 'Deploy on Friday vibes',
+    title: '🏋️ GYM SESSION COMPLETED',
+    description: 'Hit the weights. DISCIPLINE = FREEDOM.',
     priority: 4,
     strength: 7  // Large
   },
   {
-    title: 'Explain to PM why estimate was off',
-    description: 'Technical difficulties',
+    title: '🚀 SHIP THAT FEATURE',
+    description: 'Deploy to production. MAKE IT LIVE.',
     priority: 4,
     strength: 6
   },
 
   // Priority 5 tasks (hardest) - Massive strength (8-10)
   {
-    title: 'Rewrite entire codebase in Rust',
-    description: 'Peak productivity',
+    title: '👑 CRUSH ENTIRE TODO LIST',
+    description: 'Clear every single task. UNSTOPPABLE.',
     priority: 5,
     strength: 10  // MASSIVE - endgame challenge
   },
   {
-    title: 'Touch grass',
-    description: 'Warning: May cause burnout recovery',
+    title: '⚡ 10X YOUR OUTPUT',
+    description: 'Peak performance. LEGENDARY STATUS.',
     priority: 5,
     strength: 9  // Huge
   }

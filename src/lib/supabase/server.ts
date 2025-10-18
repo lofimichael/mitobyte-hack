@@ -8,8 +8,8 @@ import { env } from '../env';
  * This should only be imported in server-side code (API routes, server context, etc.)
  */
 export const supabaseAdmin = createClient(
-  env.NEXT_PUBLIC_SUPABASE_URL,
-  env.SUPABASE_SECRET_KEY,
+  env.NEXT_PUBLIC_SUPABASE_URL || '',
+  env.SUPABASE_SECRET_KEY || '',
   {
     auth: {
       autoRefreshToken: false,

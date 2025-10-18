@@ -43,7 +43,8 @@ export function KatamariCanvas() {
     if (dialogOpen) return // Prevent multiple dialogs
 
     // Check if ball is strong enough to pick up this task
-    const ballStrength = Math.floor(ballSize)
+    // +1 bonus makes it more forgiving (size 1.0 = strength 2)
+    const ballStrength = Math.floor(ballSize) + 1
     if (ballStrength < task.strength) {
       // TOO WEAK - show denial toast
       toast.error('TOO WEAK', {

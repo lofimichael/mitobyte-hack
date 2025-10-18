@@ -28,7 +28,8 @@ export function useGameControls() {
       totalCompleted: 0,
       highScore: 0,
       startTime: Date.now(),
-      sessionsPlayed: 0
+      sessionsPlayed: 0,
+      totalXP: 0
     })
   }
 
